@@ -1,24 +1,39 @@
 import React from 'react';
-import logo from './logo.svg';
+import {Route, Switch} from 'react-router-dom' ;
+import HomePage from './pages/home/home.page' ;
+import NuggetPage from './pages/nuggets/nugget.page' ;
+import PortfolioPage from './pages/portfolio/portfolio.page' ;
+import AboutPage from './pages/about/about.page' ;
+import ContactPage from './pages/contact/contact.page' ;
+
+import HeaderPage from './pages/header/header.page'
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HeaderPage />
+      <Switch>
+      <Route exact path = '/'>
+          <HomePage />
+      </Route>
+      <Route exact path = '/home'>
+          <HomePage />
+      </Route>
+      <Route exact path = '/nugget'>
+         <NuggetPage />
+      </Route>
+      <Route exact path = '/portfolio'>
+          <PortfolioPage />
+      </Route>  
+      <Route exact path = '/about'>
+          <AboutPage />
+      </Route>  
+      <Route exact  path = '/contact'>
+         <ContactPage />
+      </Route> 
+      </Switch>  
     </div>
   );
 }

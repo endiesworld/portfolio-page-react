@@ -1,0 +1,112 @@
+.home-page{
+    height: 100vh;
+    width: 100vw;
+}
+
+.home-page-children{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;  
+    overflow: hidden;  
+    background-color: rgba(0, 0, 0, 0.8);;
+}
+.image-holder{
+    position: relative;
+    width: 70%;
+    height: 100%;
+    animation: mybackground 50s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes mybackground {
+    0%{left: 0% ;}
+    10% {left: 10%; }
+    20% {left: 20%; }
+    30% {left: 30%; }
+    40% {left: 40%; }
+    50% {left: 50%; }
+    60% {left: 40%; }
+    70% {left: 30%; }
+    80% {left: 20%; }
+    90% {left: 10%; }
+    100%{left: 0% ;}
+  }
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.intro-text{
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.about-button{
+    width: 40vw;
+    max-width: 200px;
+    height: 8%;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    font-size: 4vw;
+    display: flex;
+    justify-content: space-around;
+    transition:  background-color 2s;
+    
+    .arrow-holder{
+        transition: transform 2s;
+    }
+}
+
+h1{
+    font-size: 5vw;
+    font-family: 'Comfortaa', cursive;
+    .name{
+        color: tomato;
+    }
+}
+
+
+button:hover{
+    background-color: darkgreen; 
+
+    .arrow-holder{
+        transform: rotate(-90deg);
+    
+    }
+}
+
+
+
+@media only screen and (min-width: 650px) {
+
+    .about-button{ 
+        font-size: 15px;
+    }
+    h1{
+        font-size: 2rem;
+    }
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+    .about-button{
+        width: 15%;
+        height: 8%;
+        background-color: rgba(0, 0, 0, 0.2);
+        color: white;
+        font-size: 1rem;
+    
+    }
+}

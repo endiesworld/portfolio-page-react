@@ -1,0 +1,37 @@
+.header{
+    background-color:rgba(0, 0, 0, 0.9);
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+}
+
+.link-holder{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: tomato;
+}
+
+.svg-holder{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+}
+
+.item{
+    padding-left: 30px;
+    color: tomato;
+    text-decoration: none;
+    
+}
+
+.logo{
+    border-radius: 100%;
+    background-color: tomato;
+}
