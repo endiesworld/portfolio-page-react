@@ -10,22 +10,88 @@
 }
 
 .tech-stack-section{
-    background-color: violet;
     height: 50vh;
     width: 100vw;
 }
 
+
 .stack-holder{
-    height: 50vh;
+    height: 100vh;
     width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .stack-holder-header{
-    background-color: teal;
-    width: 40%;
-    height: 50%;
+    position: relative;
+    top: 15%;
+    width: 80%;
+    height: 10%;
+    font-family: 'Lobster', cursive;
 }
 
+.skill-set{
+    position: relative;
+    top: 25%;
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+.skill-and-grade-holder{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 5%;
+    background-color: rgba(255, 99, 71, 0.8) ;
+    
+    
+
+}
+
+.skill-level{
+    background-color: rgba(255, 99, 71, 0.6) ;
+    height: 100%;
+}
+
+.html-skill{
+    width: 80%;
+}
+
+.css-skill{
+    width: 70%;
+}
+
+.javascript-skill{
+    width: 80%;
+}
+.react-skill{
+    width: 75%;
+}
+
+.java-skill{
+    width: 65%;
+}
+
+.springboot-skill{
+    width: 40%;
+}
+.skill{
+    font-weight: bold;
+    background-color: rgba(255, 99, 70, 0.1) ;
+    text-align: start;  
+    width: 20%;
+    height: 100%;
+}
+
+.grade{
+    font-weight: bold;
+    text-align: start; 
+}
 @media only screen and (min-width: 650px) {
     .about-page{
         height: 100vh;
@@ -39,59 +105,12 @@
 }
 
 .tech-stack-section{
-    background-color: violet;
     height: 100vh;
     width: 50vw;
 }
 
 .stack-holder{
-    height: 100vh;
     width: 50vw;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.stack-holder-header{
-    position: relative;
-    top: 15%;
-    background-color: teal;
-    width: 80%;
-    height: 10%;
-    font-family: 'Lobster', cursive;
-}
-
-.skill-set{
-    position: relative;
-    top: 25%;
-    background-color: teal;
-    width: 80%;
-    height: 65%;
-    
-}
-
-.html-holder{
-
-    width: 90%;
-    height: 5%;
-    background-color: wheat;
-
-}
-
-.skill-grade{
-    display: flex;
-    justify-content: space-between;
-    align-content: flex-start;
-    width: 100%;
-    height: 100%;
-}
-
-.skill{
-    font-weight: bold;
-    background-color: yellow;
-    text-align: start;  
-    width: 20%;
-    height: 100%;
 }
 
 

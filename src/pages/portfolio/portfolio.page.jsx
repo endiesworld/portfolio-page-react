@@ -3,7 +3,7 @@ import './portfolio.styles.css'
 
 function PortfolioPage() {
     return (
-        <div className='portfolio-page'>
+        <div className='portfolio-page' id='portfolio'>
             Welcome to portfolio page!!!
         </div>
     )

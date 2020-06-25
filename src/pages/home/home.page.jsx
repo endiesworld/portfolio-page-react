@@ -4,7 +4,7 @@ import pics from '../../assets/home-page-background.jpg'
 
 function Homepage() {
     return (
-        <div className= 'home-page'>
+        <div className= 'home-page' id='home' >
             <div className='home-page-children'> 
                 <div className="image-holder">
                     <img src={pics} alt="" />
